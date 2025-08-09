@@ -1,0 +1,5 @@
+const scr = document.createElement('script')
+scr.src = chrome.runtime.getURL('inpage/provider.js')
+scr.setAttribute('async', 'false')
+;(document.head || document.documentElement).appendChild(scr)
+scr.remove()
